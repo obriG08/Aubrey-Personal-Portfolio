@@ -1,0 +1,37 @@
+.footer{
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top-left p{
+    font-size: 20px;
+    overflow: hidden;     
+    text-overflow: ellipsis; 
+    max-width: 100%;
+}
+.footer-bottom-left {
+    font-size: 18px;
+    color: #d8d8d8;
+    text-align: center;
+    width: 100%;
+    margin-top: -25px;
+}
+@media(max-width:768px){
+    .footer{
+        margin: 50px 70px;
+    }
+    .footer-top{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-bottom-left{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+}
